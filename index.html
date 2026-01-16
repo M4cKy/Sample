@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Personal Website</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #667eea;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header .highlight {
+            color: #ffd700;
+        }
+
+        header .subtitle {
+            font-size: 1.3em;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #2c3e50;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 8px 16px;
+        }
+
+        nav ul li a:hover {
+            background-color: #667eea;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 60px 0;
+            background-color: white;
+            margin-bottom: 20px;
+        }
+
+        .section:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .section h3 {
+            font-size: 1.8em;
+            margin: 30px 0 15px;
+            color: #667eea;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            text-align: justify;
+            color: #555;
+        }
+
+        /* Video Container */
+        .video-container {
+            margin: 30px 0;
+            text-align: center;
+            background-color: #e9ecef;
+            padding: 20px;
+        }
+
+        .video-container video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Hobbies Grid */
+        .hobbies-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .hobby-card {
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .hobby-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .hobby-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .hobby-card p {
+            color: #666;
+            text-align: center;
+            font-size: 1em;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border: 1px solid #ddd;
+        }
+
+        .contact-info p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .contact-info strong {
+            color: #2c3e50;
+            display: inline-block;
+            min-width: 180px;
+        }
+
+        .contact-info a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hi, I'm <span class="highlight">Macky</span>!</h1>
+            <p class="subtitle">Welcome to my personal website</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hello! I am a student who loves learning and improving myself. This website is a simple personal page made using HTML and CSS.</p>
+                
+                <div class="video-container">
+                    <video controls>
+                        <source src="media/0116.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <h3>My Journey</h3>
+                <p>Every challenge I face teaches me something new. Whether it's learning a new skill or overcoming a fear, I believe that growth comes from stepping outside my comfort zone. This journey of self-improvement is what drives me every day.</p>
+
+                <div class="video-container">
+                    <video controls>
+                        <source src="media/0116.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <h3>My Passion</h3>
+                <p>I believe that passion and dedication are the keys to success. Every activity I engage in teaches me valuable lessons about life, teamwork, and perseverance. These experiences shape who I am and who I strive to become.</p>
+            </div>
+        </section>
+
+        <section id="hobbies" class="section">
+            <div class="container">
+                <h2>My Hobbies</h2>
+                <div class="hobbies-grid">
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🏀</div>
+                        <h3>Basketball</h3>
+                        <p>I enjoy playing basketball to stay active and relieve stress.</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🎤</div>
+                        <h3>Singing</h3>
+                        <p>Singing helps me express my emotions and boost my confidence.</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">📺</div>
+                        <h3>Watching Anime</h3>
+                        <p>I love watching anime for entertainment, inspiration, and storytelling.</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">📚</div>
+                        <h3>Reading</h3>
+                        <p>I enjoy reading books and articles to gain knowledge and relax.</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">👗</div>
+                        <h3>Overdressing</h3>
+                        <p>I love dressing up and expressing my style through fashion.</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🌊</div>
+                        <h3>Nature (Lake & Sea)</h3>
+                        <p>I love spending time in nature, especially near lakes and the sea.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:your.email@email.com">your.email@email.com</a></p>
+                    <p><strong>Facebook:</strong> <a href="#" target="_blank">Your Name</a></p>
+                    <p><strong>My Personal Number:</strong> <a href="tel:+1234567890">+1234567890</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 My Personal Website</p>
+        </div>
+    </footer>
+</body>
+</html>
+
